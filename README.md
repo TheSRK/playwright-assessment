@@ -58,6 +58,10 @@ npm run test:debug
 npm run report
 ```
 
+### CI Reports
+
+When tests run in GitHub Actions, the HTML report is uploaded as an artifact named `playwright-report` and retained for 30 days. You can download it from the Actions tab in the repository.
+
 ## Supported Browsers
 
 Tests are configured to run on multiple browsers:
