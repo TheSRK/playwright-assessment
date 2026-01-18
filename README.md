@@ -17,31 +17,53 @@ npm install
 npx playwright install
 ```
 
+## Environment Setup
+
+Copy the example environment file and configure:
+
+```bash
+cp .env.example .env
+```
+
+The `.env` file contains:
+```
+DEMOBLAZE_URL=https://www.demoblaze.com
+```
+
 ## Running Tests
 
 ```bash
-# Run all tests
-npx playwright test
+# Run all tests (runs on all configured browsers: chromium, firefox, webkit)
+npm test
+
+# Run tests on a specific browser
+npm run test:chromium
+npm run test:firefox
+npm run test:webkit
 
 # Run tests in headed mode (see browser)
-npx playwright test --headed
-
-# Run specific test file
-npx playwright test tests/demoblaze/purchase.spec.ts
+npm run test:headed
 
 # Run tests with UI mode
-npx playwright test --ui
+npm run test:ui
 
 # Run tests in debug mode
-npx playwright test --debug
+npm run test:debug
 ```
 
 ## Test Reports
 
 ```bash
 # Show HTML report after test run
-npx playwright show-report
+npm run report
 ```
+
+## Supported Browsers
+
+Tests are configured to run on multiple browsers:
+- **Chromium** - Google Chrome engine
+- **Firefox** - Mozilla Firefox
+- **WebKit** - Safari engine
 
 ## Project Structure
 

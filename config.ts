@@ -9,18 +9,6 @@ class Config {
         return value;
     }
 
-    get baseUrl(): string {
-        return this.getEnv('BASE_URL');
-    }
-
-    get username(): string {
-        return this.getEnv('USERNAME');
-    }
-
-    get password(): string {
-        return this.getEnv('PASSWORD');
-    }
-
     get demoblazeUrl(): string {
         return this.getEnv('DEMOBLAZE_URL');
     }
