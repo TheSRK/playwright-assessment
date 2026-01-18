@@ -1,0 +1,27 @@
+{
+ 
+  "demoblaze": {
+    "pageTitle": "STORE",
+    "successMessage": "Thank you for your purchase!",
+    "categories": ["Phones", "Laptops", "Monitors"],
+    "cartPage": {
+      "title": "Products",
+      "columns": ["Pic", "Title", "Price", "x"]
+    },
+    "checkout": {
+      "modalTitle": "Place order",
+      "requiredFields": ["Name", "Country", "City", "Credit card", "Month", "Year"]
+    },
+    "testData": {
+      "productName": "Samsung galaxy s6",
+      "checkoutDetails": {
+        "name": "John Doe",
+        "country": "United States",
+        "city": "New York",
+        "creditCard": "4111111111111111",
+        "month": "12",
+        "year": "2026"
+      }
+    }
+  }
+}
